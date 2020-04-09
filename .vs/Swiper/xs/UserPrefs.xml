@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{50B05D83-3388-474B-9F26-E7435E5652FD}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Swiper/MainPage.xaml">
+    <Files>
+      <File FileName="Swiper/MainPage.xaml.cs" Line="32" Column="1" />
+      <File FileName="Swiper/MainPage.xaml" Line="9" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Swiper" expanded="True">
+            <Node name="Swiper" expanded="True">
+              <Node name="MainPage.xaml" expanded="True" selected="True" />
+            </Node>
+            <Node name="Swiper.Android" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Swiper.Android PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
