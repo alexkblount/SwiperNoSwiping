@@ -1,13 +1,23 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="Swiper.MainPage">
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             mc:Ignorable="d" 
+             x:Class="Swiper.MainPage"
+             x:Name="ContentPage">
     <CollectionView ItemsSource="{Binding People}">
         <CollectionView.ItemTemplate>
             <DataTemplate>
                 <SwipeView BackgroundColor="Red" SwipeEnded="SwipeView_SwipeEnded" SwipeChanging="SwipeView_SwipeChanging" SwipeStarted="SwipeView_SwipeStarted" >
                     <SwipeView.LeftItems>
                         <SwipeItems>
-                            <SwipeItem Text="Delete" />
-                            <SwipeItem Text="                   " />
+                            <SwipeItemView>
+                                <FlexLayout HorizontalOptions="FillAndExpand" WidthRequest="{Binding Source={x:Reference ContentPage},
+                                    Path=Width}">
+                                    <Label Text="DELETE" HorizontalOptions="Start"/>
+                                </FlexLayout>
+                            </SwipeItemView>
                         </SwipeItems>
                     </SwipeView.LeftItems>
                     <Frame>
@@ -19,6 +29,5 @@
                 </SwipeView>
             </DataTemplate>
         </CollectionView.ItemTemplate>
-
     </CollectionView>
 </ContentPage>
